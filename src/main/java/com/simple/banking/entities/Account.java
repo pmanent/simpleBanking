@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OrderBy;
 
 @Entity
 public class Account {
@@ -23,6 +24,7 @@ public class Account {
         mappedBy = "account",
         cascade = CascadeType.ALL,fetch = FetchType.EAGER
     )
+	@OrderBy("id DESC")
     private List<Movement> movements;
 	
 	public Account() {
