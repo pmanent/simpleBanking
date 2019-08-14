@@ -22,7 +22,7 @@ mvn spring-boot:run
 # Api Rest Commands:
 Login
 ```
-localhost:9000/login (GET)
+localhost:9000/login (POST)
 ```
 Statement
 ```
